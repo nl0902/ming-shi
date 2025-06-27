@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fef9e9;
+  margin: 0;
+  color: #444;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff8e1;
+  padding: 0.8rem 20px;
+  box-shadow: 0 4px 15px rgba(180, 148, 78, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: #b4975a;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #b4975a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #b4975a;
+  color: white;
+}
+
+header {
+  background: url('https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fef9e9;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.3rem;
+  font-weight: 600;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #b4975a;
+  margin: 2rem 0 1.5rem 0;
+  border-bottom: 3px solid #b4975a;
+  padding-bottom: 4px;
+}
+
+.news-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.news-list li {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.member-card {
+  background-color: #fff8e1;
+  box-shadow: 0 18px 40px rgba(180, 148, 78, 0.15);
+  padding: 1.5rem 1.8rem;
+  border-radius: 10px;
+  width: 240px;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.member-card:hover {
+  box-shadow: 0 24px 50px rgba(180, 148, 78, 0.3);
+}
+
+.member-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #b4975a;
+}
+
+.member-card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #444;
+}
+
+footer {
+  background-color: #b4975a;
+  color: white;
+  padding: 1.2rem 20px;
+  margin-top: 4rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.footer-info {
+  font-size: 0.9rem;
+  max-width: 600px;
+}
+
+.footer-social a {
+  margin-left: 10px;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+
+.footer-social a:hover {
+  filter: brightness(0) invert(0.8);
+}
+
+.join-form {
+  max-width: 480px;
+  margin: 2rem auto 6rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff8e1;
+  box-shadow: 0 18px 40px rgba(180, 148, 78, 0.15);
+}
+
+.join-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #b4975a;
+}
+
+.join-form input,
+.join-form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.join-form button {
+  background-color: #b4975a;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.join-form button:hover {
+  background-color: #96783d;
+}
+
+.contact-info {
+  max-width: 600px;
+  margin: 3rem auto 6rem auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.contact-info p {
+  margin-bottom: 1rem;
+}
+
+/* 404 page styles */
+.notfound-body {
+  background-color: #fef9e9;
+  font-family: 'Montserrat', sans-serif;
+  color: #b4975a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+.notfound-body h1 {
+  font-size: 6rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.notfound-body p {
+  font-size: 1.6rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.notfound-body a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #b4975a;
+  border: 2px solid #b4975a;
+  padding: 0.6rem 1.4rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.notfound-body a:hover {
+  background-color: #b4975a;
+  color: #fff;
+}
